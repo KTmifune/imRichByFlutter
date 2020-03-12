@@ -9,8 +9,11 @@ void main() => runApp(
             title: Text('I am Rich!!'),
             backgroundColor: Colors.blueGrey[900],
           ),
-          body: Image(
-            image: NetworkImage('https://www.w3schools.com/css/img_lights.jpg'),
+          body: Center(
+            child: Image(
+              image: NetworkImage(
+                  'https://pbs.twimg.com/media/C33D20fUYAAQENF.jpg:orig'),
+            ),
           ),
         ),
       ),
