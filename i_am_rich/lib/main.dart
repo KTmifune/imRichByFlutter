@@ -9,11 +9,16 @@ void main() => runApp(
             title: Text('I am Rich!!'),
             backgroundColor: Colors.blueGrey[900],
           ),
-          body: Center(
-            child: Image(
-              image: NetworkImage(
-                  'https://pbs.twimg.com/media/C33D20fUYAAQENF.jpg:orig'),
-            ),
+          body: Column(
+            children: <Widget>[
+              Image(
+                image: NetworkImage(
+                    'https://pbs.twimg.com/media/C33D20fUYAAQENF.jpg:orig'),
+              ),
+              Image(
+                image: AssetImage('images/diamond.png'),
+              )
+            ],
           ),
         ),
       ),
